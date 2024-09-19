@@ -4,7 +4,7 @@ const writeJSON = require("./writeJSON");
 
 const update = function(new_title, new_desc) {
 
-    let data_json = fs.readFileSync("G:/Escritorio-W10/Proyecto_JavaScript/Proyecto_taskApp/taskData.json", "utf-8"); 
+    let data_json = fs.readFileSync("G:/Escritorio-W10/Proyecto_JavaScript/Proyecto_taskApp/Data.json", "utf-8"); 
     
     data = JSON.parse(data_json);
 
