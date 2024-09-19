@@ -1,3 +1,5 @@
+/** Busca una elemento con su key "title" y lo elimina junto con su respectivo elemento "desc" */
+
 const fs = require("fs");
 const writeJSON = require("./writeJSON");
 

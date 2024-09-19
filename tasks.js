@@ -2,7 +2,6 @@ const list = require("./functios/list.js");
 const find = require("./functios/find.js");
 const filter = require("./functios/filter.js");
 const return_js = require("./functios/return.js");
-const edit = require("./functios/edit.js");
 const read = require("./CRUD/read.js");
 const update = require("./CRUD/update.js");
 const create = require("./CRUD/create.js");
@@ -27,16 +26,13 @@ switch (process.argv[2]) {
         console.log(return_js(process.argv[3]));
         break;
 
-    case "edit":
-        console.log(edit());
-        break;
-
     case "read":
         console.log(read());
         break;
 
-    case "edit":
-        console.log(update(process.argv[3], process.argv[4]));
+    case "edit":   
+        console.log(update(process.argv[3], process.argv[4], process.argv[5]));
+        
         break;
         
     case "add":
