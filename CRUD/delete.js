@@ -3,10 +3,8 @@
 const fs = require("fs");
 const writeJSON = require("./writeJSON");
 
-const deleteF = function(delete_title) {
-
+const deleteF = (delete_title) => {
     let data_json = fs.readFileSync("G:/Escritorio-W10/Proyecto_JavaScript/Proyecto_taskApp/Data.json", "utf-8"); 
-    
     data = JSON.parse(data_json);
    
     for (let i = 0; i < data.length; i++) {

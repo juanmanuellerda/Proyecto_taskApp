@@ -2,10 +2,7 @@
 
 const read = require('../CRUD/read');
 
-const list = function() {
-
-    return read();
-  }
+const list = () => read();
 
 module.exports = list;
 

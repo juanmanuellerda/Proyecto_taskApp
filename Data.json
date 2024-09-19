@@ -4,6 +4,14 @@
     "desc": "andar a caballo"
   },
   {
+    "title": "cantar",
+    "desc": "entonar canciones"
+  },
+  {
+    "title": "comer",
+    "desc": "ingerir alimentos"
+  },
+  {
     "title": "correr",
     "desc": "desplazarse a gran velocidad"
   },
@@ -18,13 +26,5 @@
   {
     "title": "saltar",
     "desc": "ganar elevacion"
-  },
-  {
-    "title": "cantar",
-    "desc": "entonar canciones"
-  },
-  {
-    "title": "comer",
-    "desc": "ingerir alimentos"
   }
 ]

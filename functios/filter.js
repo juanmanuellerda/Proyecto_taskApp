@@ -2,8 +2,7 @@
 
 const tasks = require('../Data.js');
 
-const filter = function(x) {
-    
+const filter = (x) => {
     let list = [];
     for (let i = 0; i < tasks.length; i++) {
         if (tasks[i].title.match(x)) {

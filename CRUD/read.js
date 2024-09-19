@@ -5,9 +5,6 @@ El método fs.readFileSync() lee un archivo de texto de forma sincronica */
 
 const fs = require("fs");
 
-const read = function() {
-    data = JSON.parse(fs.readFileSync("G:/Escritorio-W10/Proyecto_JavaScript/Proyecto_taskApp/Data.json", "utf-8"));    
-    return data; 
-}
+const read = () => JSON.parse(fs.readFileSync("G:/Escritorio-W10/Proyecto_JavaScript/Proyecto_taskApp/Data.json", "utf-8"));   
 
 module.exports = read;

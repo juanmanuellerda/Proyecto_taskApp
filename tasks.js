@@ -11,7 +11,9 @@ const writeJSON = require("./CRUD/writeJSON.js");
 const crear_JSON = require("./CRUD/crear_JSON.js");
 
 
-listar(); 
+if ((undefined === process.argv[2])) {
+ listar(); 
+}
 
 switch (process.argv[2]) {
     case "list":
@@ -36,7 +38,6 @@ switch (process.argv[2]) {
 
     case "edit":   
         console.log(update(process.argv[3], process.argv[4], process.argv[5]));
-        
         break;
         
     case "add":
