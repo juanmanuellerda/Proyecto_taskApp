@@ -8,15 +8,16 @@ a = list();
 
 const findF = function(x) {
     for (let i = 0; i < a.length; i++) {
-        if (a[i].title.includes(x)){
+       /* if (a[i].title.includes(x)){
             mess= "true";
             break;
         }        
         else{
             mess = "false";
-        }        
+        }*/
+       return a[i].title.includes(x);  //otra forma a la comentada    
     }
-    return mess; 
+    //return mess; 
 }
 
 module.exports = findF;
