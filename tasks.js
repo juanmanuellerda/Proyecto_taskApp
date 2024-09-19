@@ -11,6 +11,8 @@ const writeJSON = require("./CRUD/writeJSON.js");
 const crear_JSON = require("./CRUD/crear_JSON.js");
 
 
+listar(); 
+
 switch (process.argv[2]) {
     case "list":
         console.log(list());
@@ -58,6 +60,8 @@ switch (process.argv[2]) {
         break;
 
     default:
+        if(!(undefined === process.argv[2])) {
         console.log("comando no aceptado")
+        }        
         break;
   }
