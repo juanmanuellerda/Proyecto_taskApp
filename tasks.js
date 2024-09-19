@@ -1,6 +1,7 @@
 const list = require("./functios/list.js");
 const find = require("./functios/find.js");
 const filter = require("./functios/filter.js");
+const listar = require("./functios/list_functios.js");
 const return_js = require("./functios/return.js");
 const read = require("./CRUD/read.js");
 const update = require("./CRUD/update.js");
@@ -8,6 +9,7 @@ const create = require("./CRUD/create.js");
 const deleteF = require("./CRUD/delete.js");
 const writeJSON = require("./CRUD/writeJSON.js");
 const crear_JSON = require("./CRUD/crear_JSON.js");
+
 
 switch (process.argv[2]) {
     case "list":
@@ -49,6 +51,10 @@ switch (process.argv[2]) {
 
     case "crear_JSON":
         console.log(crear_JSON()); 
+        break;
+    
+    case "list_functions":
+        listar(); 
         break;
 
     default:
